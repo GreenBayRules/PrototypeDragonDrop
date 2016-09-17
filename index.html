@@ -339,7 +339,7 @@ generated automatically and are common for each slider. */
                     if (data == "text") {
 
                         var text = "default text";
-                        if (text !== null) {
+                        if (text != null) {
                             document.getElementById(ev.target.id).innerHTML = y + text +
                                 "<br>";
                             document.getElementById(ev.target.id).innerHTML = "<input type='textbox' value=text></input>";
@@ -351,7 +351,7 @@ generated automatically and are common for each slider. */
                     if (data == "photo") {
                         var pic = prompt("Leave a link to your picture here",
                             "INSERT PHOTO LINK HERE");
-                        if (pic !== null) {
+                        if (pic != null) {
                             document.getElementById(ev.target.id).innerHTML = y +
                                 "<img src='" + pic + "' />";
                             exportcode = exportcode + "<img src='" + pic + "' />"
@@ -359,7 +359,7 @@ generated automatically and are common for each slider. */
                     }
                     if (data == "ytembed") {
                         var x = prompt("YouTube Video ID", "iVSvuXeAxeE");
-                        if (x !== null) {
+                        if (x != null) {
                             document.getElementById(ev.target.id).innerHTML = y +
                                 "<iframe width=560 height=315 src=https://www.youtube.com/embed/" +
                                 x + " frameborder=" +
@@ -374,7 +374,7 @@ generated automatically and are common for each slider. */
 
                     if (data == "scratchembed") {
                         var x = prompt("Project ID", "118225589");
-                        if (x !== null) {
+                        if (x != null) {
                             document.getElementById(ev.target.id).innerHTML = y +
                                 '      <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/'+x+'/?autostart=false" frameborder="0" allowfullscreen></iframe>
     ';
@@ -384,7 +384,7 @@ generated automatically and are common for each slider. */
                     }
                     if (data == "html") {
                         var text = prompt("What HTML do you want here?", "ENTER YOUR TEXT HERE");
-                        if (text !== null) {
+                        if (text != null) {
                             document.getElementById(ev.target.id).innerHTML = y + text;
                             exportcode = exportcode + text;
                         }
